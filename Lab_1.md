@@ -1,12 +1,12 @@
 # Lab 1
 
-In the first lab, we play around with the [FrozenLake env](https://gym.openai.com/envs/FrozenLake-v0/) and try to learn a good policy from experience.
+In this first lab we play around with the [FrozenLake environment](https://gym.openai.com/envs/FrozenLake-v0/) and try to learn a good policy from experience.
 Take a look at the file `1_FrozenLake_Random.py` to have a starting point for the following tasks:
 
 ### Task 1:
-- Run episodes using the random policy until the agent reaches the goal (reward > 0).
-- Print how many runs it took to get a successful trial.
-- Remember the states and actions that were taken in this trial. How many actions did it take to reach the goal?
+- Run episodes using a random policy until the agent reaches the goal (reward > 0).
+- Print how many runs it took to create a successful episode.
+- Remember the states and actions that were taken in this episode. How many actions did it take to reach the goal?
 - Given these results, write an algorithm that generates a policy that reaches the goal faster.
 - Run one episode using this new policy and compare the results.
 
@@ -16,7 +16,7 @@ Take a look at the file `1_FrozenLake_Random.py` to have a starting point for th
 - Compare the results to task 1.
 
 ### Task 3:
-- Use the learned policy from Task 1 and execute it in an 4x4 env that is slippery:
+- Use the learned policy from Task 1 and execute it in an 4x4 environment that is slippery:
 `env_slippery = gym.make("FrozenLake-v0", is_slippery=True)`
 - What is the problem with the learned policy?
 - How can we learn a good policy in such an environment?
