@@ -23,7 +23,7 @@ def play_episode(env, policy=None):
         if policy is  None:
             action = random.randint(0, no_of_actions-1)
         else:
-            action = policy[state] # choose a random action
+            action = policy[state]
 
         actions.append(action)
         state, reward, done, _ = env.step(action)
