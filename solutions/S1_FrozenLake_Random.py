@@ -20,10 +20,10 @@ def play_episode(env, policy=None):
     states = [state]
     actions = []
     while not done:
-        if (policy is not None) and (state in policy):
-            action = policy[state]
+        if policy is  None:
+            action = random.randint(0, no_of_actions-1)
         else:
-            action = random.randint(0, no_of_actions-1)  # choose a random action
+            action = policy[state] # choose a random action
 
         actions.append(action)
         state, reward, done, _ = env.step(action)
