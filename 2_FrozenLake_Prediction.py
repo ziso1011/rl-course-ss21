@@ -1,5 +1,6 @@
 import random
 import gym
+import numpy as np
 
 env = gym.make("FrozenLake-v0")
 random.seed(0)
