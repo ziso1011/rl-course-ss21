@@ -12,15 +12,10 @@ print("## Frozen Lake ##")
 print("Start state:")
 env.render()
 
-
-def init_q():
-    q_values = {}
-    q_counters = {}
-    for s in range(0, env.observation_space.n):
-        for a in range(0, env.action_space.n):
-            q_values[(s, a)] = 0
-            q_counters[(s, a)] = 0
-    return q_values, q_counters
+no_states = env.observation_space.n
+no_actions = env.action_space.n
+q_values = np.zeros((no_states, no_actions))
+q_counter = np.zeros((no_states, no_actions))
 
 
 def play_episode(q_values):
@@ -42,7 +37,6 @@ def play_episode(q_values):
 def main():
     no_episodes = 1000
     rewards = []
-    q_values, q_counters = init_q()
     for i in range(0, no_episodes):
         s, r = play_episode(q_values)
         rewards.append(sum(r))
