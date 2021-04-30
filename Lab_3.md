@@ -17,5 +17,5 @@ This code uses a random policy and plots the collected rewards over time.
 ### Task 2:
 Implement now Q-learning as comparison control strategy:
 
-- Redo task 1 using Q-Learning instead of MC control (use alpha=0.5).
+- Redo task 1 using Q-Learning instead of MC control (use `alpha=0.5`).
 - As above, try out the different epsilons and compare them in one plot.
