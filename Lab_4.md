@@ -23,6 +23,6 @@ What are the probabilities for the different classes?
 Hint: Since the network outputs raw scores, you need to apply the [softmax](https://pytorch.org/docs/stable/generated/torch.nn.Softmax.html)
 function to normalize the network's output to probabilities.
 
-### Bonus Task:
+### Task 4:
 Train a model on the digits dataset and see how accurate you can get
 (use https://github.com/pabair/ml-kurs-ss21/blob/main/2_Logistische_Regression_Digits.ipynb as template).
