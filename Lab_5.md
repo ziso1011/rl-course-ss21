@@ -3,7 +3,7 @@
 In this lab we look into implementations of Deep Q-Networks (DQNs) in PyTorch.
 
 ### Task 1:
-Check the file [`5_DQN_LunarLander.ipynb`](https://github.com/pabair/rl-course-ws2020/blob/main/5_DQN_LunarLander.ipynb)
+Check the file [`5_DQN_LunarLander.ipynb`](5_DQN_LunarLander.ipynb)
 which implements a DQN on the [LunarLander](https://gym.openai.com/envs/LunarLander-v2/) environment.
 
 1. Execute the code on your machine (or on Google Colab) and watch the recorded video.
@@ -29,7 +29,7 @@ environment using a DQN.
 - Play one episode with the trained model and record the outcome.
 
 ### Bonus Task:
-Go through [this](https://github.com/pabair/rl-course-ws2020/blob/main/5_DQN_Pong.ipynb) implementation of a DQN for
+Go through [this](5_DQN_Pong.ipynb) implementation of a DQN for
 playing Atari Pong directly on pixels values.
 Run the notebook on your machine (or Colab) and try to understand what is going on.
 
